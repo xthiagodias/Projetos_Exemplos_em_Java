@@ -14,13 +14,15 @@ public class main {
         System.out.println("Qual o valor da Prestação? %");
         double vlrPrestacao = s.nextDouble();
 
-        if (vlrPrestacao > 30) {
+        if (vlrPrestacao >= 30) {
 
             System.out.println("O valor da prestação excede o máximo permitido! Tente novamente.");
 
         } else {
 
             System.out.println("O Emprestimo foi concedido! Obrigado.");
+            System.out.println("Valor concedido: R$"+vlrPrestacao/100*(salarioBruto));
+            System.out.println("TOTAL: R$"+(vlrPrestacao/100*(salarioBruto)+salarioBruto));
         }
 
     }

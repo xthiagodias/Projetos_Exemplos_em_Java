@@ -7,9 +7,10 @@ public class main {
     public static void main(String args[]) {
 
         Scanner s = new Scanner(System.in);
-
+        int numero = 0;
+        while (numero >= 0 && numero <= 100 ) {
         System.out.println("Entre com o número: ");
-        int numero = s.nextInt();
+        numero = s.nextInt();
 
         if ((numero >= 0) && (numero <= 100)) {
 
@@ -22,4 +23,4 @@ public class main {
 
     }
 
-}
+}}
